@@ -14,8 +14,8 @@ function Main() {
         setcPage(1);
     }
     return (<>
-        {}
-        {}
+        {/* <div>Main</div> */}
+        {/* <div>````````````````</div> */}
         <div className="flex">
             <Genre setGlobalGenre={setGlobalGenre}></Genre>
             <Movies
@@ -24,7 +24,7 @@ function Main() {
                 setcPage={setcPage}
             ></Movies>
         </div>
-        {}
+        {/* <div>````````````````</div> */}
     </>
 
     )

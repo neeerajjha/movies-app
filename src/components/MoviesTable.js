@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 function MoviesTable(props) {
+  // so i will run only one time after first execution of return statement  
   let { content, isLoaded, setContent ,filteredContent} = props
 
   const deleteMovie = (tobeDeletedMovieId) => {
@@ -8,17 +9,18 @@ function MoviesTable(props) {
     setContent(newObject);
   }
 
+  // data
   return (
     <div>{isLoaded == true ?
       <div className="font-bold">Loading...</div > :
       <table className="table-auto">
         <thead>
           <tr>
-            <th className="px-8">#</th>
-            <th className="px-8 "> Title</th>
-            <th className="px-8">Genre</th>
-            <th className="px-8">IMDB</th>
-            <th className="px-8">Audience</th>
+            <th className="px-2">#</th>
+            <th className="px-2 "> Title</th>
+            <th className="px-2">Genre</th>
+            <th className="px-2">Stock</th>
+            <th className="px-2">Rate</th>
             <th></th>
           </tr>
         </thead>
